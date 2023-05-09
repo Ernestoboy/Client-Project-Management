@@ -1,0 +1,48 @@
+.barra-progreso {
+  position: relative;
+  width: 70%;
+  height: 4vh;
+  border: 7px solid beige;
+  border-radius: 20vh;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(to right, #396afc, #2948ff);
+  background: rgb(60, 15, 72, 1);
+  box-shadow: 5px 5px 10px 5px rgb(25, 25, 25, 0.3);
+}
+
+
+.nivel {
+
+  position: absolute;
+  width: 20%;
+  height: 100%;
+
+
+
+}
+
+
+.etapa {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  border-right: 5px solid beige;
+
+
+}
+
+
+@keyframes move {
+  0% {
+    clip-path: polygon(0 0, 0 3%, 0 100%, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 0 3%, 0 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}

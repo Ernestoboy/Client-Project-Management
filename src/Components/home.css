@@ -1,0 +1,325 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: linear-gradient(120deg, rgb(56, 12, 131), rgb(122, 38, 204));
+
+}
+
+
+
+.contenedor-info {
+    width: 59%;
+    height: 75vh;
+    background: rgb(82, 52, 149, 0.0);
+
+    padding-top: 5vh;
+    padding-bottom: 17vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(82, 52, 149, 0.0);
+    border-bottom-right-radius: 5vw;
+
+
+}
+
+
+
+
+
+.contenedor-info p {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    padding: 0.7vw;
+    border-radius: 10px;
+    background: rgb(126, 39, 209);
+    background: rgb(140, 44, 226);
+    z-index: 100;
+    font-size: 1.2vw;
+    box-shadow: 2px 2px 15px 10px rgb(20, 20, 20, 0.1);
+
+}
+
+.contenedor-info p:first-of-type {
+    color: white;
+    font-size: 3.5vw;
+    background: none;
+    font-family: 'Lobster', cursive;
+    box-shadow: none;
+}
+
+
+
+.contenedor-info p:first-of-type:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(120deg, rgb(56, 12, 131), crimson);
+    clip-path: polygon(0 0, 25% 0, 32% 100%, 0% 100%);
+}
+
+.contenedor-info p:nth-of-type(2) {
+    background: rgb(240, 240, 240, 0.0);
+    color: white;
+    box-shadow: none;
+}
+
+
+.numeral {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(57, 12, 133);
+    left: 4vw;
+    border: 3px solid white;
+    color: white;
+    box-shadow: 1px 1px 10px 5px rgb(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+
+
+}
+
+.contenedor-animacion {
+
+    width: 25%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 22vh;
+
+
+}
+
+.conten-home {
+    position: relative;
+    height: 30vh;
+    width: 25vw;
+    background: grey;
+    border-radius: 77% 23% 60% 40% / 17% 56% 44% 83%;
+    background: linear-gradient(120deg, rgb(56, 12, 131, 0.3), rgb(220, 220, 220, 0.1));
+    background: rgb(230, 230, 230, 3);
+    box-shadow: -3px -3px 10px 5px rgb(40, 40, 40, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(200, 200, 200, 1)
+}
+
+
+
+.conten-home:before {
+    content: "";
+    width: 17vw;
+    height: 37.5vh;
+    background: url("../gallery/reloj-arenaV5.png");
+    background-size: cover;
+
+    animation-name: medioGiro;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes medioGiro {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+
+
+
+.circulo {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    animation: spin 22s linear infinite;
+    border: 12px solid rgb(245, 245, 245, 0.7)
+}
+
+@keyframes spin {
+
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.circulo .img-1 {
+    position: absolute;
+    width: 11vw;
+    height: 10vh;
+    background: url("../gallery/homeV5.png");
+    background-size: cover;
+    top: 0;
+    right: 2vw;
+    border: 0.4vw solid beige;
+    box-shadow: 1px 1px 10px 5px rgb(20, 20, 20, 0.1);
+    border-radius: 5px;
+    animation: spinDos 22s linear infinite;
+}
+
+.circulo .img-2 {
+    position: absolute;
+    width: 11vw;
+    height: 10vh;
+    background: url("../gallery/homeV6.png");
+    background-size: cover;
+    bottom: 0;
+    left: 2vw;
+    border: 0.3vw solid beige;
+    box-shadow: 1px 1px 10px 5px rgb(20, 20, 20, 0.1);
+    border-radius: 5px;
+    animation: spinDos 22s linear infinite;
+}
+
+
+@keyframes spinDos {
+
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+
+    .home {
+        position: relative;
+
+        height: 150vh;
+        align-items: start;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+
+
+
+    }
+
+    .contenedor-info {
+        width: 80%;
+        height: 90vh;
+        top: 5vh;
+        align-items: baseline;
+
+        position: relative;
+
+
+    }
+
+    .contenedor-info p {
+        width: 100%;
+
+        z-index: 100;
+        font-size: 2.2vh;
+
+
+    }
+
+    .contenedor-info p:first-of-type {
+        color: white;
+        font-size: 3.5vh;
+        background: none;
+        font-family: 'Lobster', cursive;
+        box-shadow: none;
+    }
+
+
+    .contenedor-animacion {
+
+        width: 25%;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 10vh;
+
+
+    }
+
+    .circulo {
+        position: absolute;
+        width: 65vw;
+        height: 65vw;
+        border-radius: 50%;
+        animation: spin 22s linear infinite;
+        border: 12px solid rgb(245, 245, 245, 0.7)
+    }
+
+
+    .conten-home {
+        position: relative;
+        width: 25vw;
+        height: 15vh;
+
+
+    }
+
+
+
+
+    .conten-home:before {
+        content: "";
+        width: 35.5vw;
+        height: 12vh;
+
+
+    }
+
+
+    .circulo .img-1 {
+
+        width: 35.5vw;
+        height: 9vh;
+
+    }
+
+    .circulo .img-2 {
+        position: absolute;
+        width: 35vw;
+        height: 9vh;
+
+    }
+
+
+}

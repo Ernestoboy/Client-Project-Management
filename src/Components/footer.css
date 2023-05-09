@@ -1,0 +1,101 @@
+.contenedor-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 26vh;
+    background: rgb(25, 25, 25, 1);
+    background: rgb(30, 30, 30);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 15px 10px rgb(20, 20, 20, 0.2);
+
+}
+
+.info-1,
+.info-2,
+.info-3 {
+    position: relative;
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-1 {
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.info-1 .img {
+    width: 17%;
+    height: 47%;
+    background: url("../gallery/reloj-arenaV4.png");
+    background-size: cover;
+
+
+
+}
+
+
+
+
+.info-2 {
+    display: flex;
+
+}
+
+.info-2 i {
+    font-size: 11vh;
+    margin-right: 1vw;
+    color: rgb(220, 220, 220, 1);
+}
+
+.info-2 .contenido {
+    font-size: 2.3vh;
+    color: rgb(220, 220, 220, 0.7);
+}
+
+.info-3 {
+    padding-left: 1%;
+    border-left: 2px solid #0077B5;
+    border-radius: 10px;
+    color: rgb(220, 220, 220, 0.7);
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+
+.info-3 p {
+    border-bottom: 2px solid #0077B5;
+    padding-bottom: 2vh;
+    font-size: 2.3vh;
+}
+
+
+
+.fa-linkedin {
+    color: #0077B5;
+    font-size: 5.2vh;
+    margin-right: 2vw;
+}
+
+.fa-instagram {
+    color: #C13584;
+    font-size: 5.2vh;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+    .contenedor-footer {
+
+        display: none;
+
+
+    }
+
+}

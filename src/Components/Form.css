@@ -1,0 +1,154 @@
+.formulario {
+  width: 100%;
+  height: 100vh;
+
+  background: rgb(82, 52, 149, 1);
+
+}
+
+.contenedor-formulario {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../gallery/morado--22.png");
+  flex-wrap: wrap;
+
+}
+
+.conte-formulario {
+  position: relative;
+  width: 50vw;
+  height: 52vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.conte-formulario:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  clip-path: polygon(0 0, 81% 0, 0 84%, 0 84%);
+
+  border: 5px solid rgb(240, 240, 240, 0.1);
+
+}
+
+.conte-recomendacion {
+  width: 25vw;
+  height: 40vh;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: 1px 5px 10px 5px rgb(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+
+}
+
+.conte-recomendacion p,
+h2 {
+  margin: 1.2vw;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 3.2vh 2.2vh 3.2vh 2.2vh;
+
+  border-radius: 15px;
+  width: 15vw;
+  max-width: 400px;
+  background: rgb(87, 61, 151);
+
+  box-shadow: 3px 5px 10px 5px rgb(0, 0, 0, 0.2);
+  border: 5px solid rgb(240, 240, 240, 0.7);
+
+}
+
+
+
+label {
+  margin: 2.5vh 0;
+  font-weight: bold;
+  align-self: flex-start;
+  z-index: 1000;
+}
+
+input {
+
+  padding: 1.2vh;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background: beige;
+  width: 92%;
+  z-index: 1000;
+  color: black;
+}
+
+button {
+
+  color: white;
+
+  border-radius: 5px;
+  margin-top: 3.5vh;
+  cursor: pointer;
+  z-index: 1000;
+  outline: none;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 840px) {
+  .conte-formulario {
+    position: relative;
+    width: 100vw;
+    height: 52vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 32vh;
+
+  }
+
+
+  .conte-recomendacion {
+    width: 85vw;
+    height: 35vh;
+    font-size: 2.5vh;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .conte-recomendacion p,
+  h2 {
+    margin-bottom: 4vh;
+
+  }
+
+  form {
+    position: relative;
+    top: -3vh;
+    width: 60vw;
+  }
+
+  .conte-formulario:after {
+    display: none;
+
+  }
+}
