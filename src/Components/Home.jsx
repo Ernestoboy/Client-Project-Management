@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className='home'>
       <div className='contenedor-info'>
-        <p>Proyect Progresses</p>
+        <p>Proyect Progresses Probando a ver si funciona...noviembre</p>
         <p>Es una plataforma con el objetivo de indicar la etapa en que se encuentra un proyecto
           creada de manera privada con el objetivo de muestra de informacion de proyecto unicamente para el cliente o empresa
           el cual a requerido de mis servicios como desarrollado web "Ernesto Ulloa"</p>
