@@ -24,8 +24,8 @@ function MyProyect() {
 
   };
   
-  const API_BASE_URL= process.env.API_BASE_URL;
-  const API_BASE_GET= process.env.API_BASE_GET;
+  const API_BASE_URL= "https://proyect-progresses-restapi.onrender.com/my-proyect"
+  const API_BASE_GET= "https://proyect-progresses-restapi.onrender.com/api/user"
   const RARO= process.env.RARO;
                                   
 
